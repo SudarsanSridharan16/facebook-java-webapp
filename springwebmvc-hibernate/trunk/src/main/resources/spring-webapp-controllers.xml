@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    - Application context definition for Controller objects
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<!-- METHOD NAME RESOLVER -->
+	<bean id="methodNameResolver"
+		class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+		<property name="paramName"><value>methodName</value></property>
+		<property name="defaultMethodName"><value>defaultMultiFormHandler</value></property>
+	</bean>
+
+
+	<!-- CONTROLLER DEFINITIONS -->
+	<bean id="authorizeController" class="com.consulttek.facebook.web.controller.AuthorizeController">
+		<property name="methodNameResolver" ref="methodNameResolver"/>
+		<property name="userService" ref="userService" />
+	</bean>
+
+	<bean id="inviteController" class="com.consulttek.facebook.web.controller.InviteController">
+		<property name="methodNameResolver" ref="methodNameResolver"/>
+	</bean>
+
+	<bean id="welcomeController" class="com.consulttek.facebook.web.controller.WelcomeController">
+		<property name="methodNameResolver" ref="methodNameResolver"/>
+	</bean>
+
+</beans>

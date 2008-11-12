@@ -1,0 +1,18 @@
+GRANT USAGE ON *.* TO `facebook`@`localhost` IDENTIFIED BY 'facebook' REQUIRE NONE;
+GRANT Select  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Insert  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Update  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Delete  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Create  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Drop  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT USAGE  ON `facebook`.* TO `facebook`@`localhost` WITH GRANT OPTION;
+GRANT References  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Index  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Alter  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Create temporary tables  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Lock tables  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Create View  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Show view  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Create routine  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Alter routine  ON `facebook`.* TO `facebook`@`localhost`;
+GRANT Execute  ON `facebook`.* TO `facebook`@`localhost`;
