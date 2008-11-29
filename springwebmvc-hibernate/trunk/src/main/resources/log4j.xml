@@ -9,7 +9,7 @@
     </layout> 
   </appender> 
 
-	<logger name="com.consulttek.facebook.service.impl.TemplateBundleRegisterImpl">
+	<logger name="com.google.code.facebookwebapp.service.impl.TemplateBundleRegisterImpl">
 		<level value="DEBUG" />
 	</logger>
 

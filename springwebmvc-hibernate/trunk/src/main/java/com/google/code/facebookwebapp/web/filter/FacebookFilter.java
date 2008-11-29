@@ -1,4 +1,4 @@
-package com.consulttek.facebook.web.filter;
+package com.google.code.facebookwebapp.web.filter;
 
 import java.io.IOException;
 

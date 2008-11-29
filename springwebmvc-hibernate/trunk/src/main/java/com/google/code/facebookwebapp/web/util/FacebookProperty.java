@@ -1,4 +1,4 @@
-package com.consulttek.facebook.web.util;
+package com.google.code.facebookwebapp.web.util;
 
 import org.apache.commons.configuration.CompositeConfiguration;
 import org.springframework.beans.factory.annotation.Required;

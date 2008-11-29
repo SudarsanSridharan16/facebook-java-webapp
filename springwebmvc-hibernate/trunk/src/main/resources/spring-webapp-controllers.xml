@@ -17,16 +17,16 @@
 
 
 	<!-- CONTROLLER DEFINITIONS -->
-	<bean id="authorizeController" class="com.consulttek.facebook.web.controller.AuthorizeController">
+	<bean id="authorizeController" class="com.google.code.facebookwebapp.web.controller.AuthorizeController">
 		<property name="methodNameResolver" ref="methodNameResolver"/>
 		<property name="userService" ref="userService" />
 	</bean>
 
-	<bean id="inviteController" class="com.consulttek.facebook.web.controller.InviteController">
+	<bean id="inviteController" class="com.google.code.facebookwebapp.web.controller.InviteController">
 		<property name="methodNameResolver" ref="methodNameResolver"/>
 	</bean>
 
-	<bean id="welcomeController" class="com.consulttek.facebook.web.controller.WelcomeController">
+	<bean id="welcomeController" class="com.google.code.facebookwebapp.web.controller.WelcomeController">
 		<property name="methodNameResolver" ref="methodNameResolver"/>
 	</bean>
 

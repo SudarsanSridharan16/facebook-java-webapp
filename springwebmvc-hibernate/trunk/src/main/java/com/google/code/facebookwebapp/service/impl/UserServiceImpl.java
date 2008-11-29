@@ -1,8 +1,8 @@
-package com.consulttek.facebook.service.impl;
+package com.google.code.facebookwebapp.service.impl;
 
-import com.consulttek.facebook.model.dao.UserDao;
-import com.consulttek.facebook.service.UserService;
 import com.consulttek.model.User;
+import com.google.code.facebookwebapp.model.dao.UserDao;
+import com.google.code.facebookwebapp.service.UserService;
 
 /**
  * @author Cesar Arevalo
@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.consulttek.facebook.service.UserService#lookup(java.lang.String)
+	 * @see com.google.code.facebookwebapp.service.UserService#lookup(java.lang.String)
 	 */
 	public User lookup(String facebookUserId) {
 		return userDao.lookup(facebookUserId);

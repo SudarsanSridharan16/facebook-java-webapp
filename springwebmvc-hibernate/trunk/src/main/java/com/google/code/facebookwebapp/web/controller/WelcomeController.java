@@ -1,4 +1,4 @@
-package com.consulttek.facebook.web.controller;
+package com.google.code.facebookwebapp.web.controller;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -14,9 +14,9 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 import org.w3c.dom.Document;
 
-import com.consulttek.facebook.web.util.FacebookConstants;
-import com.consulttek.facebook.web.util.FacebookProperty;
 import com.google.code.facebookapi.FacebookWebappHelper;
+import com.google.code.facebookwebapp.web.util.FacebookConstants;
+import com.google.code.facebookwebapp.web.util.FacebookProperty;
 
 /**
  * @author Cesar Arevalo

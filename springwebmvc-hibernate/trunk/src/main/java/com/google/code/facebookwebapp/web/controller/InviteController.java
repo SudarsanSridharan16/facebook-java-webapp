@@ -1,4 +1,4 @@
-package com.consulttek.facebook.web.controller;
+package com.google.code.facebookwebapp.web.controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 
-import com.consulttek.facebook.web.util.FacebookConstants;
+import com.google.code.facebookwebapp.web.util.FacebookConstants;
 
 /**
  * @author Cesar Arevalo

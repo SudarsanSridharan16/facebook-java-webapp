@@ -1,4 +1,4 @@
-package com.consulttek.facebook.web.interceptor;
+package com.google.code.facebookwebapp.web.interceptor;
 
 import net.sf.json.spring.web.servlet.view.JsonView;
 
@@ -6,11 +6,11 @@ import org.springframework.beans.factory.annotation.Required;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import org.w3c.dom.Document;
 
-import com.consulttek.facebook.service.UserService;
-import com.consulttek.facebook.web.util.FacebookConstants;
-import com.consulttek.facebook.web.util.FacebookProperty;
 import com.google.code.facebookapi.FacebookParam;
 import com.google.code.facebookapi.FacebookWebappHelper;
+import com.google.code.facebookwebapp.service.UserService;
+import com.google.code.facebookwebapp.web.util.FacebookConstants;
+import com.google.code.facebookwebapp.web.util.FacebookProperty;
 
 /**
  * @author Cesar Arevalo

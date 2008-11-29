@@ -1,4 +1,4 @@
-package com.consulttek.facebook.web.controller;
+package com.google.code.facebookwebapp.web.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -7,11 +7,11 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 import org.w3c.dom.Document;
 
-import com.consulttek.facebook.service.UserService;
-import com.consulttek.facebook.web.util.FacebookConstants;
-import com.consulttek.facebook.web.util.FacebookProperty;
 import com.google.code.facebookapi.FacebookParam;
 import com.google.code.facebookapi.FacebookWebappHelper;
+import com.google.code.facebookwebapp.service.UserService;
+import com.google.code.facebookwebapp.web.util.FacebookConstants;
+import com.google.code.facebookwebapp.web.util.FacebookProperty;
 
 /**
  * Handle authorization requests made from facebook.

@@ -68,11 +68,11 @@
 
 	<!-- INTERCEPTORS -->
 	<bean id="facebookOpenSessionInViewInterceptor"
-		class="com.consulttek.facebook.web.util.FacebookOpenSessionInViewInterceptor">
+		class="com.google.code.facebookwebapp.web.util.FacebookOpenSessionInViewInterceptor">
 		<property name="sessionFactory" ref="facebookSessionFactory" />
 		<property name="flushModeName" value="FLUSH_AUTO" />
 	</bean>
-	<bean id="facebookInterceptor" class="com.consulttek.facebook.web.interceptor.FacebookInterceptor">
+	<bean id="facebookInterceptor" class="com.google.code.facebookwebapp.web.interceptor.FacebookInterceptor">
 		<property name="userService" ref="userService"/>
 	</bean>
 

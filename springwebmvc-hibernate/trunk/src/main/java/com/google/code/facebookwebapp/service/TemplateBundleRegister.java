@@ -1,4 +1,4 @@
-package com.consulttek.facebook.service;
+package com.google.code.facebookwebapp.service;
 
 import java.io.IOException;
 

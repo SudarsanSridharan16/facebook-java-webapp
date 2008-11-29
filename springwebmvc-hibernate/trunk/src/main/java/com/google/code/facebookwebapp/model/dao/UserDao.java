@@ -1,4 +1,4 @@
-package com.consulttek.facebook.model.dao;
+package com.google.code.facebookwebapp.model.dao;
 
 import com.consulttek.model.User;
 

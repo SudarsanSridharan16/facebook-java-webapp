@@ -39,7 +39,7 @@
 		<property name="sessionFactory" ref="facebookSessionFactory"/>
 	</bean>
 
-	<bean id="userDao" class="com.consulttek.facebook.model.dao.hibernate.HibernateUserDao">
+	<bean id="userDao" class="com.google.code.facebookwebapp.model.dao.hibernate.HibernateUserDao">
         <property name="hibernateTemplate" ref="facebookHibernateTemplate" />
     </bean>
 

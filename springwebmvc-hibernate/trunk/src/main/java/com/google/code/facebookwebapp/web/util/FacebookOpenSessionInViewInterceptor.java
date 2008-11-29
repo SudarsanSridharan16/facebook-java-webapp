@@ -1,4 +1,4 @@
-package com.consulttek.facebook.web.util;
+package com.google.code.facebookwebapp.web.util;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -7,4 +7,4 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib uri="http://struts.apache.org/tags-tiles" prefix="tiles" %>
 <%@ taglib uri="http://jakarta.apache.org/taglibs/unstandard-1.0" prefix="un" %>
-<un:useConstants var="FacebookConstants" className="com.consulttek.facebook.web.util.FacebookConstants"/>
+<un:useConstants var="FacebookConstants" className="com.google.code.facebookwebapp.web.util.FacebookConstants"/>

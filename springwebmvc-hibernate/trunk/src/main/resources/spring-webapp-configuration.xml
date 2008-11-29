@@ -21,7 +21,7 @@
 		</constructor-arg>
 	</bean>
 
-	<bean id="facebookProperty" class="com.consulttek.facebook.web.util.FacebookProperty">
+	<bean id="facebookProperty" class="com.google.code.facebookwebapp.web.util.FacebookProperty">
 		<property name="compositeConfiguration" ref="compositeConfiguration"/>
 	</bean>
 

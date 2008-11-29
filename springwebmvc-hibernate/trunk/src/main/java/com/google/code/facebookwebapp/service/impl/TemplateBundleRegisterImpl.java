@@ -1,4 +1,4 @@
-package com.consulttek.facebook.service.impl;
+package com.google.code.facebookwebapp.service.impl;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,15 +8,15 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.consulttek.facebook.service.TemplateBundleRegister;
-import com.consulttek.facebook.web.util.FacebookConstants;
-import com.consulttek.facebook.web.util.FacebookProperty;
 import com.google.code.facebookapi.BundleStoryTemplate;
 import com.google.code.facebookapi.FacebookException;
 import com.google.code.facebookapi.FacebookJaxbRestClient;
 import com.google.code.facebookapi.FacebookXmlRestClient;
 import com.google.code.facebookapi.schema.FeedGetRegisteredTemplateBundlesResponse;
 import com.google.code.facebookapi.schema.TemplateBundle;
+import com.google.code.facebookwebapp.service.TemplateBundleRegister;
+import com.google.code.facebookwebapp.web.util.FacebookConstants;
+import com.google.code.facebookwebapp.web.util.FacebookProperty;
 
 /**
  * @author Cesar Arevalo

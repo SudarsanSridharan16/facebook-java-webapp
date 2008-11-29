@@ -1,9 +1,10 @@
-package com.consulttek.facebook.model.dao;
+package com.google.code.facebookwebapp;
 
 import org.springframework.beans.factory.annotation.Required;
 import org.springframework.test.AbstractTransactionalDataSourceSpringContextTests;
 
 import com.consulttek.model.User;
+import com.google.code.facebookwebapp.model.dao.UserDao;
 
 /**
  * Tests the integrity of all the functionality in the {@code UserDao}.
