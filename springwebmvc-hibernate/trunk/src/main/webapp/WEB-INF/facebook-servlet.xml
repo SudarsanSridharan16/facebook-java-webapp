@@ -29,6 +29,7 @@
                 <prop key="/authorize.fbml">authorizeController</prop>
                 <prop key="/invite.fbml">inviteController</prop>
                 <prop key="/welcome.fbml">welcomeController</prop>
+                <prop key="/fbml-tags.fbml">fbmlTagsController</prop>
             </props>
         </property>
         <property name="interceptors">

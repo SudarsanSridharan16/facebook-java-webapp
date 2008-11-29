@@ -6,12 +6,16 @@
     <definition name="header" page="/WEB-INF/content/tiles/main-header.jsp" />
     <definition name="default" page="/WEB-INF/content/tiles/default-layout.jsp">
         <put name="header" value="header" />
+        <put name="body" value="/WEB-INF/content/500.htm" />
     </definition>
     <definition name="welcome" extends="default">
         <put name="body" value="/WEB-INF/content/welcome.jsp" />
     </definition>
     <definition name="invite" extends="default">
         <put name="body" value="/WEB-INF/content/invite.jsp" />
+    </definition>
+    <definition name="fbmlTags" extends="default">
+        <put name="body" value="/WEB-INF/content/fbmlTags.jsp" />
     </definition>
     <definition name="redirect" extends="default">
         <put name="body" value="/WEB-INF/content/redirect.jsp" />

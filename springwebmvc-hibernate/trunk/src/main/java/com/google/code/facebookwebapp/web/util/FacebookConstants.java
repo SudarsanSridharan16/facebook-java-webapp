@@ -27,6 +27,11 @@ public class FacebookConstants {
 	public static final String VIEW_BLANK = "invite";
 
 	/**
+	 * The view that is rendered for the fbml tags page
+	 */
+	public static final String VIEW_FBMLTAGS = "fbmlTags";
+
+	/**
 	 * PROPERTIES
 	 */
 
@@ -85,6 +90,12 @@ public class FacebookConstants {
 	 * is selected or not
 	 */
 	public static final String MODEL_INVITE_SELECTED = "inviteSelected";
+
+	/**
+	 * Model Object for knowing whether the fbml tags page in the canvas
+	 * is selected or not
+	 */
+	public static final String MODEL_FBMLTAGS_SELECTED = "fbmlTagsSelected";
 
 	/**
 	 * Model Object for the content displayed in the invite page

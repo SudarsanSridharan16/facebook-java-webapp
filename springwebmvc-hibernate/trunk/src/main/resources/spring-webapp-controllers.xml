@@ -30,4 +30,8 @@
 		<property name="methodNameResolver" ref="methodNameResolver"/>
 	</bean>
 
+	<bean id="fbmlTagsController" class="com.google.code.facebookwebapp.web.controller.FbmlTagsController">
+		<property name="methodNameResolver" ref="methodNameResolver"/>
+	</bean>
+
 </beans>

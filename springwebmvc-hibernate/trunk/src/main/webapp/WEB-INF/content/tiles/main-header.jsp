@@ -17,4 +17,5 @@
 <fb:tabs>
     <fb:tab-item href="${canvasUrl}/" title="Welcome" selected="${welcomeSelected}"/>
     <fb:tab-item href="${canvasUrl}/invite" title="Invite Friends" selected="${inviteSelected}"/>
+    <fb:tab-item href="${canvasUrl}/fbml-tags" title="FBML Tags" selected="${fbmlTagsSelected}"/>
 </fb:tabs>
