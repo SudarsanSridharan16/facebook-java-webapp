@@ -1,6 +1,6 @@
 package com.google.code.facebookwebapp.service;
 
-import com.consulttek.model.User;
+import com.google.code.facebookwebapp.User;
 
 /**
  * @author Cesar Arevalo

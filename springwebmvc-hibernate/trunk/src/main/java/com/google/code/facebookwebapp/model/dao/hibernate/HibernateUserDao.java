@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
-import com.consulttek.model.User;
+import com.google.code.facebookwebapp.User;
 import com.google.code.facebookwebapp.model.dao.UserDao;
 
 /**

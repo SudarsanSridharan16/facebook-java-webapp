@@ -1,6 +1,6 @@
 package com.google.code.facebookwebapp.service.impl;
 
-import com.consulttek.model.User;
+import com.google.code.facebookwebapp.User;
 import com.google.code.facebookwebapp.model.dao.UserDao;
 import com.google.code.facebookwebapp.service.UserService;
 
