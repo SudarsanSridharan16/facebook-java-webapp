@@ -30,6 +30,7 @@
                 <prop key="/invite.fbml">inviteController</prop>
                 <prop key="/welcome.fbml">welcomeController</prop>
                 <prop key="/fbml-tags.fbml">fbmlTagsController</prop>
+                <prop key="/fbml-tags/fb-name.fbml">fbmlTagNameController</prop>
             </props>
         </property>
         <property name="interceptors">
@@ -41,14 +42,22 @@
     </bean>
 
 
-    <!-- VIEW RESOLVER -->
-    <bean id="viewResolver"
-      class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-	    <property name="order" value="0"/>
-	    <property name="viewClass">
-	        <value>org.springframework.web.servlet.view.tiles.TilesJstlView</value>
-	    </property>
-    </bean>
+    <!-- VIEW RESOLVERS -->
+	<bean id="tilesViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="order" value="0" />
+		<property name="viewClass">
+			<value>org.springframework.web.servlet.view.tiles.TilesView</value>
+		</property>
+	</bean>
+	<bean id="jspViewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="order" value="1" />
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
 
 
     <!-- LOCALE RESOLVER -->

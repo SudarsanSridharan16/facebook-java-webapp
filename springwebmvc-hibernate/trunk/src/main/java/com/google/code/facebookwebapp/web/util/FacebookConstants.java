@@ -32,6 +32,11 @@ public class FacebookConstants {
 	public static final String VIEW_FBMLTAGS = "fbmlTags";
 
 	/**
+	 * The view that is rendered for the fbml-name tag page
+	 */
+	public static final String VIEW_FBMLTAGS_NAME = "fbml-tags-fb-name";
+
+	/**
 	 * PROPERTIES
 	 */
 
