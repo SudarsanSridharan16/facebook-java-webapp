@@ -8,14 +8,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 	<!-- data source and session factory -->
-	<!--
-	<bean id="facebookDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
-		<property name="driverClass" value="${facebook.db.driver_class}" />
-		<property name="jdbcUrl" value="jdbc:mysql://${facebook.db.host}:${facebook.db.port}/${facebook.db.schema}" />
-		<property name="user" value="${facebook.db.username}" />
-		<property name="password" value="${facebook.db.password}" />
-    </bean>
-    -->
     <bean id="facebookDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="${facebook.db.driver_class}"/>
 		<property name="url" value="jdbc:mysql://${facebook.db.host}:${facebook.db.port}/${facebook.db.schema}"/>

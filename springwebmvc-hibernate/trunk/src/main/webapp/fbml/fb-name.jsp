@@ -1,4 +1,6 @@
 <%@ include file="/WEB-INF/content/includes/include.jsp"%>
+<%@ include file="/fbml/setProperties_DELETEME.jsp"%>
+<%@ include file="/WEB-INF/content/tiles/main-header.jsp"%>
 
 <fb:header>Fb:name</fb:header>
 
