@@ -1,5 +1,3 @@
-== Changelog ==
-
 === Release 0.2 ===
 
   * Add the database layer, to showcase a simple Add and Remove of a user
