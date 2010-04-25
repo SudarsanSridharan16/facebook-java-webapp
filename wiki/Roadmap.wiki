@@ -1,0 +1,8 @@
+=== Release 0.3 ===
+
+  * Make examples in JSP's of ALL the FBML tags.
+
+=== Release 0.4 ===
+
+  * Support Struts 2 as the Web MVC framework in a separate folder
+  * Integration with Facebook API REST Client for retrieval of friend data
