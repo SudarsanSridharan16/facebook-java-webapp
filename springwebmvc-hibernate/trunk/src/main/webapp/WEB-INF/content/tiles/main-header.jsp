@@ -1,4 +1,25 @@
 <%@ include file="/WEB-INF/content/includes/include.jsp"%>
+<link href="${callbackUrl}/styles/fjw.css" rel="stylesheet" type="text/css" />
+
+<style>
+	.fbml-title a {
+		font-size: 12px;
+		font-weight: bold;
+		line-height:18px;
+	}
+	
+	div.fbml-title {
+		margin-top: 10px;
+	}
+	
+	.fbml-title h2 {
+		color:#666666;
+		font-size:16px;
+		font-weight:normal;
+		margin-bottom:16px;
+	}
+</style>
+
 <fb:google-analytics uacct="UA-2694507-3" />
 
 <fb:if-is-app-user>

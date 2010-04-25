@@ -1,0 +1,11 @@
+.fbml-tag {
+	margin-top: 20px;
+	border: 1px solid blue;
+}
+
+.fbml-title a {
+	font-size: 12px;
+	font-weight: bold;
+	line-height:18px;
+}
+
