@@ -4,7 +4,6 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/hibernate3/generated-mappings"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/hibernate3/generated-sources"/>
         <property name="context-root" value="facebook-webapp"/>
         <property name="java-output-path"/>
