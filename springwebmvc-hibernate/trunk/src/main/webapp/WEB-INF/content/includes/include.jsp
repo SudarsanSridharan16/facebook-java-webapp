@@ -7,4 +7,14 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib uri="http://struts.apache.org/tags-tiles" prefix="tiles" %>
 <%@ taglib uri="http://jakarta.apache.org/taglibs/unstandard-1.0" prefix="un" %>
-<un:useConstants var="FacebookConstants" className="com.google.code.facebookwebapp.web.util.FacebookConstants"/>
+<un:useConstants var="fc" className="com.google.code.facebookwebapp.web.util.FacebookConstants"/>
+<c:if test="${callbackUrl eq null}">
+	<spring:message code="${fc.PROPERTY_CALLBACK_URL}" var="callbackUrl" scope="application"/>
+</c:if>
+<c:if test="${canvasUrl eq null}">
+	<spring:message code="${fc.PROPERTY_CANVAS_URL}" var="canvasUrl" scope="application"/>
+</c:if>
+<c:if test="${apiKey eq null}">
+	<spring:message code="${fc.PROPERTY_API_KEY}" var="apiKey" scope="application"/>
+</c:if>
+<c:set var="fbmlTagsSelected" value="true" />

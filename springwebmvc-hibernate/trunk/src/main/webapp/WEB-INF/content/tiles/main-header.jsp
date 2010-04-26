@@ -2,22 +2,28 @@
 <link href="${callbackUrl}/styles/fjw.css" rel="stylesheet" type="text/css" />
 
 <style>
-	.fbml-title a {
-		font-size: 12px;
-		font-weight: bold;
-		line-height:18px;
-	}
-	
-	div.fbml-title {
-		margin-top: 10px;
-	}
-	
-	.fbml-title h2 {
-		color:#666666;
-		font-size:16px;
-		font-weight:normal;
-		margin-bottom:16px;
-	}
+div.fbml-tag {
+	margin-top: 20px;
+	border: 1px solid blue;
+	padding: 20px;
+}
+
+.fbml-title a {
+	font-size: 12px;
+	font-weight: bold;
+	line-height:18px;
+}
+
+div.fbml-title {
+	margin-top: 10px;
+}
+
+.fbml-title h2 {
+	color:#666666;
+	font-size:16px;
+	font-weight:normal;
+	margin-bottom:16px;
+}
 </style>
 
 <fb:google-analytics uacct="UA-2694507-3" />

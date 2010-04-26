@@ -26,4 +26,12 @@
 		<li><a title="fb:user" href="${canvasUrl}/fbml/pronoun.jsp">fb:pronoun</a></li>
 		<li><a title="fb:user" href="${canvasUrl}/fbml/user.jsp">fb:user</a></li>
 	</ul>
+
+	<hr/>
+	<h2>Notifications and Requests</h2>
+	<ul>
+		<li><a title="fb:eventlink" href="${canvasUrl}/fbml/application-name.jsp">fb:application-name</a></li>
+		<li><a title="fb:eventlink" href="${canvasUrl}/fbml/multi-friend-selector.jsp">fb:multi-friend-selector</a></li>
+		<li><a title="fb:eventlink" href="${canvasUrl}/fbml/multi-friend-selector_condensed.jsp">fb:multi-friend-selector_(condensed)</a></li>
+	</ul>
 </div>
