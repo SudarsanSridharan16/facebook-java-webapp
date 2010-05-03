@@ -1,14 +1,23 @@
 <%@ include file="/WEB-INF/content/includes/include.jsp"%>
 
 <div>
-welcome <fb:name uid="loggedinuser" capitalize="true" useyou="false" firstnameonly="true" />!
+	<h1>Welcome <fb:name uid="loggedinuser" capitalize="true" useyou="false" firstnameonly="true" />!</h1>
 </div>
 
-<div>
+<div class="mT10">
+	<p>This application showcases the facebook API from a java perspective.
+	The examples are divided into the following categories:</p>
+	<ul class="featured">
+		<li><a href="${canvasUrl}/fbml-tags" title="FBML Tags">FBML Tags</a></li>
+		<li><a href="${canvasUrl}/invite" title="Invite Friends">Invite Friends</a></li>
+	</ul>
+</div>
+
+<div class="mT10">
 	<div>
 		Answer the poll and a notification will be sent to yourself?
 	</div>
-	<div style="margin-top: 10px;">
+	<div>
 		<fb:editor action="welcome" labelwidth="100">
 			<input type="hidden" name="methodName" value="sendNotificationToOneUser">
 			<fb:editor-custom label="Does developing for facebook is easier with facebook-java-webapp?">
@@ -26,7 +35,7 @@ welcome <fb:name uid="loggedinuser" capitalize="true" useyou="false" firstnameon
 	</div>
 </div>
 
-<div>
+<div clas="mT10">
 	<div>
 		Publish a feed through a Form
 	</div>
