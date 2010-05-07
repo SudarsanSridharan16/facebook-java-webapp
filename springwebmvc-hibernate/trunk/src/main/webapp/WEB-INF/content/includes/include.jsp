@@ -18,3 +18,4 @@
 	<spring:message code="${fc.PROPERTY_API_KEY}" var="apiKey" scope="application"/>
 </c:if>
 <c:set var="fbmlTagsSelected" value="true" />
+

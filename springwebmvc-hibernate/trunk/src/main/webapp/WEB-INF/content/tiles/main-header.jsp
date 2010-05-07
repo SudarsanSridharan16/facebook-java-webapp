@@ -8,6 +8,13 @@ div.fbml-tag {
 	padding: 20px;
 }
 
+.fbml-tags-ul {
+	font-size:13px;
+	line-height:18px;
+	list-style:none inside none;
+	list-style-type:disc;
+}
+
 .fbml-tags-list a {
 	font-size: 12px;
 	font-weight: bold;
