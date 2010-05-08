@@ -61,6 +61,11 @@ public class FacebookConstants {
 	public static final String PROPERTY_API_SECRET = "facebook.secret";
 
 	/**
+	 * Facebook Render Method
+	 */
+	public static final String PROPERTY_RENDER_METHOD = "facebook.render.method";
+
+	/**
 	 * Property for retrieving the template bundle id 1
 	 */
 	public static final String PROPERTY_FEED_TEMPLATE_BUNDLE_1 = "facebook.feed.templateBundle.1";

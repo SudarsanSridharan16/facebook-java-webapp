@@ -1,5 +1,6 @@
 package com.google.code.facebookwebapp.model.dao.hibernate;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
@@ -27,6 +28,7 @@ public class HibernateUserDao extends HibernateDaoSupport implements UserDao {
 		User user = new User();
 		user.setFacebookUserId(facebookUserId);
 		user.setSessionKey(sessionKey);
+		user.setUpdated(new Date());
 
 		getHibernateTemplate().saveOrUpdate(user);
 

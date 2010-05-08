@@ -2,9 +2,7 @@ package com.google.code.facebookwebapp;
 
 import org.springframework.beans.factory.annotation.Required;
 import org.springframework.test.AbstractTransactionalDataSourceSpringContextTests;
-import org.springframework.test.context.TestExecutionListeners;
 
-import com.google.code.facebookwebapp.User;
 import com.google.code.facebookwebapp.model.dao.UserDao;
 
 /**

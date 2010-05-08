@@ -1,1 +1,1 @@
-create database if not exists facebook CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+create database if not exists facebook CHARACTER SET "utf8";

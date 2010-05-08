@@ -17,5 +17,8 @@
 <c:if test="${apiKey eq null}">
 	<spring:message code="${fc.PROPERTY_API_KEY}" var="apiKey" scope="application"/>
 </c:if>
+<c:if test="${renderMethod eq null}">
+	<spring:message code="${fc.PROPERTY_RENDER_METHOD}" var="renderMethod" scope="application"/>
+</c:if>
 <c:set var="fbmlTagsSelected" value="true" />
 

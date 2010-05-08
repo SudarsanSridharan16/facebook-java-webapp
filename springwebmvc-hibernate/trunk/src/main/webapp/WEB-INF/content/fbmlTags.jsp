@@ -19,6 +19,14 @@
 	<li><a href="#wall">Wall</a></li>
 	<li><a href="#visibility-on-profile">Visibility on Profile</a></li>
 	<li><a href="#profile-specific">Profile-specific</a></li>
+	<li><a href="#misc">Misc</a></li>
+	<li><a href="#editor-display">Editor Display</a></li>
+	<li><a href="#embedded-media">Embedded Media</a></li>
+	<li><a href="#dialog">Dialog</a></li>
+	<li><a href="#additional-permissions">Additional Permissions</a></li>
+	<li><a href="#social-widgets">Social Widgets</a></li>
+	<li><a href="#message-attachments">Message Attachments</a></li>
+	<li><a href="#forms">Forms</a></li>
 </ul>
 </div>
 
@@ -136,12 +144,91 @@
 
 	<h2 id="profile-specific">Profile-specific</h2>
 	<ul>
-		<li><a title="fb:" href="${canvasUrl}/fbml/.jsp">fb:</a></li>
+		<li><a title="fb:action" href="${canvasUrl}/fbml/action.jsp">fb:action</a></li>
+		<li><a title="fb:add-section-button" href="${canvasUrl}/fbml/add-section-button.jsp">fb:add-section-button</a></li>
+		<li><a title="fb:if-section-not-added" href="${canvasUrl}/fbml/if-section-not-added.jsp">fb:if-section-not-added</a></li>
+		<li><a title="fb:narrow" href="${canvasUrl}/fbml/narrow.jsp">fb:narrow</a></li>
+		<li><a title="fb:publisher-link" href="${canvasUrl}/fbml/publisher-link.jsp">fb:publisher-link</a></li>
+		<li><a title="fb:subtitle" href="${canvasUrl}/fbml/subtitle.jsp">fb:subtitle</a></li>
+		<li><a title="fb:user-item" href="${canvasUrl}/fbml/user-item.jsp">fb:user-item</a></li>
+		<li><a title="fb:user-table" href="${canvasUrl}/fbml/user-table.jsp">fb:user-table</a></li>
+		<li><a title="fb:wide" href="${canvasUrl}/fbml/wide.jsp">fb:wide</a></li>
 	</ul>
 	<hr/>
 
-	<h2 id=""></h2>
+	<h2 id="misc">Misc</h2>
 	<ul>
-		<li><a title="fb:" href="${canvasUrl}/fbml/.jsp">fb:</a></li>
+		<li><a title="fb:fbml" href="${canvasUrl}/fbml/fbml.jsp">fb:fbml</a></li>
+		<li><a title="fb:fbmlversion" href="${canvasUrl}/fbml/fbmlversion.jsp">fb:fbmlversion</a></li>
+		<li><a title="fb:js-string" href="${canvasUrl}/fbml/js-string.jsp">fb:js-string</a></li>
+		<li><a title="fb:page-admin-edit-header" href="${canvasUrl}/fbml/page-admin-edit-header.jsp">fb:page-admin-edit-header</a></li>
+		<li><a title="fb:redirect" href="${canvasUrl}/fbml/redirect.jsp">fb:redirect</a></li>
+		<li><a title="fb:ref" href="${canvasUrl}/fbml/ref.jsp">fb:ref</a></li>
+		<li><a title="fb:share-button" href="${canvasUrl}/fbml/share-button.jsp">fb:share-button</a></li>
+		<li><a title="fb:share-button_(XFBML)" href="${canvasUrl}/fbml/share-button_XFBML.jsp">fb:share-button_(XFBML)</a></li>
+		<li><a title="fb:time" href="${canvasUrl}/fbml/time.jsp">fb:time</a></li>
+		<li><a title="fb:title" href="${canvasUrl}/fbml/title.jsp">fb:title</a></li>
+	</ul>
+	<hr/>
+
+	<h2 id="editor-display">Editor Display</h2>
+	<ul>
+		<li><a title="fb:editor" href="${canvasUrl}/fbml/editor.jsp">fb:editor</a></li>
+		<li><a title="fb:editor-button" href="${canvasUrl}/fbml/editor-button.jsp">fb:editor-button</a></li>
+		<li><a title="fb:editor-buttonset" href="${canvasUrl}/fbml/editor-buttonset.jsp">fb:editor-buttonset</a></li>
+		<li><a title="fb:editor-cancel" href="${canvasUrl}/fbml/editor-cancel.jsp">fb:editor-cancel</a></li>
+		<li><a title="fb:editor-custom" href="${canvasUrl}/fbml/editor-custom.jsp">fb:editor-custom</a></li>
+		<li><a title="fb:editor-date" href="${canvasUrl}/fbml/editor-date.jsp">fb:editor-date</a></li>
+		<li><a title="fb:editor-divider" href="${canvasUrl}/fbml/editor-divider.jsp">fb:editor-divider</a></li>
+		<li><a title="fb:editor-month" href="${canvasUrl}/fbml/editor-month.jsp">fb:editor-month</a></li>
+		<li><a title="fb:editor-text" href="${canvasUrl}/fbml/editor-text.jsp">fb:editor-text</a></li>
+		<li><a title="fb:editor-textarea" href="${canvasUrl}/fbml/editor-textarea.jsp">fb:editor-textarea</a></li>
+		<li><a title="fb:editor-time" href="${canvasUrl}/fbml/editor-time.jsp">fb:editor-time</a></li>
+	</ul>
+	<hr/>
+
+	<h2 id="embedded-media">Embedded Media</h2>
+	<ul>
+		<li><a title="fb:flv" href="${canvasUrl}/fbml/flv.jsp">fb:flv</a></li>
+		<li><a title="fb:iframe" href="${canvasUrl}/fbml/iframe.jsp">fb:iframe</a></li>
+		<li><a title="fb:mp3" href="${canvasUrl}/fbml/mp3.jsp">fb:mp3</a></li>
+		<li><a title="fb:photo" href="${canvasUrl}/fbml/photo.jsp">fb:photo</a></li>
+		<li><a title="fb:silverlight" href="${canvasUrl}/fbml/silverlight.jsp">fb:silverlight</a></li>
+		<li><a title="fb:swf" href="${canvasUrl}/fbml/swf.jsp">fb:swf</a></li>
+	</ul>
+	<hr/>
+
+	<h2 id="dialog">Dialog</h2>
+	<ul>
+		<li><a title="fb:dialog" href="${canvasUrl}/fbml/dialog.jsp">fb:dialog</a></li>
+		<li><a title="fb:dialog-button" href="${canvasUrl}/fbml/dialog-button.jsp">fb:dialog-button</a></li>
+		<li><a title="fb:dialog-content" href="${canvasUrl}/fbml/dialog-content.jsp">fb:dialog-content</a></li>
+		<li><a title="fb:dialog-title" href="${canvasUrl}/fbml/dialog-title.jsp">fb:dialog-title</a></li>
+	</ul>
+	<hr/>
+
+	<h2 id="additional-permissions">Additional Permissions</h2>
+	<ul>
+		<li><a title="fb:prompt-permission" href="${canvasUrl}/fbml/prompt-permission.jsp">fb:prompt-permission</a></li>
+	</ul>
+	<hr/>
+
+	<h2 id="social-widgets">Social Widgets</h2>
+	<ul>
+		<li><a title="fb:comments_(XFBML)" href="${canvasUrl}/fbml/comments_XFBML.jsp">fb:comments_(XFBML)</a></li>
+		<li><a title="fb:live-stream" href="${canvasUrl}/fbml/live-stream.jsp">fb:live-stream</a></li>
+	</ul>
+	<hr/>
+
+	<h2 id="message-attachments">Message Attachments</h2>
+	<ul>
+		<li><a title="fb:attachment-preview" href="${canvasUrl}/fbml/attachment-preview.jsp">fb:attachment-preview</a></li>
+	</ul>
+	<hr/>
+
+	<h2 id="forms">Forms</h2>
+	<ul>
+		<li><a title="fb:captcha" href="${canvasUrl}/fbml/captcha.jsp">fb:captcha</a></li>
+		<li><a title="fb:submit" href="${canvasUrl}/fbml/submit.jsp">fb:submit</a></li>
 	</ul>
 </div>
