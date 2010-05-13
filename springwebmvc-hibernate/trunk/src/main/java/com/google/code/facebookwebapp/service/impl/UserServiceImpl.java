@@ -1,5 +1,7 @@
 package com.google.code.facebookwebapp.service.impl;
 
+import java.util.Date;
+
 import com.google.code.facebookwebapp.User;
 import com.google.code.facebookwebapp.model.dao.UserDao;
 import com.google.code.facebookwebapp.service.UserService;
@@ -22,6 +24,25 @@ public class UserServiceImpl implements UserService {
 	 */
 	public User create(String facebookUserId, String sessionKey) {
 		return userDao.createUser(facebookUserId, sessionKey);
+	}
+
+	/* (non-Javadoc)
+	 * @see com.google.code.facebookwebapp.service.UserService#create(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+	 */
+	public User create(String facebookUserId, String name, String profileUrl,
+			String accessToken, String sessionKey) {
+		User user = lookup(facebookUserId);
+		if (user != null) {
+			user.setAccessToken(accessToken);
+			user.setName(name);
+			user.setProfileUrl(profileUrl);
+			user.setSessionKey(sessionKey);
+			user.setUpdated(new Date());
+			return user;
+		}
+		else {
+			return userDao.createUser(facebookUserId, name, profileUrl, accessToken, sessionKey);
+		}
 	}
 
 	/* (non-Javadoc)

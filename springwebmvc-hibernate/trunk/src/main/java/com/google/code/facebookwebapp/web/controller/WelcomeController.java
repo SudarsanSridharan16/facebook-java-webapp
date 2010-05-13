@@ -1,7 +1,5 @@
 package com.google.code.facebookwebapp.web.controller;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,28 +29,6 @@ public class WelcomeController extends MultiActionController {
 		model.put(FacebookConstants.MODEL_WELCOME_SELECTED, true);
 
 		return new ModelAndView(FacebookConstants.VIEW_WELCOME, model);
-	}
-
-	public ModelAndView sendNotificationToOneUser(HttpServletRequest request,
-			HttpServletResponse response) throws Exception {
-
-		// get a facebook webapp helper
-		FacebookWebappHelper<Document> facebookWebappHelper = FacebookWebappHelper.newInstanceXml(request, response, FacebookProperty.getString(FacebookConstants.PROPERTY_API_KEY), FacebookProperty.getString(FacebookConstants.PROPERTY_API_SECRET));
-
-		// wrap the user that will receive the notification
-		Collection<Long> users = new ArrayList<Long>();
-		users.add(facebookWebappHelper.getUser());
-
-		// send the notification to the user
-		facebookWebappHelper
-				.get_api_client()
-				.notifications_send(
-						users,
-						" answered "
-								+ request.getParameter("state")
-								+ " to the question \"Does developing for facebook is easier with facebook-java-webapp?\"");
-
-		return defaultMultiFormHandler(request, response);
 	}
 
 	public ModelAndView publishToMiniFeed(HttpServletRequest request, HttpServletResponse response) throws Exception {

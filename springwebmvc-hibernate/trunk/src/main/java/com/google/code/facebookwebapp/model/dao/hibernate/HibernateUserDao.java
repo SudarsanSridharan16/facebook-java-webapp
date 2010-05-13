@@ -25,8 +25,17 @@ public class HibernateUserDao extends HibernateDaoSupport implements UserDao {
 	 * @see com.google.code.facebookwebapp.model.dao.UserDao#createUser(java.lang.String, java.lang.String)
 	 */
 	public User createUser(String facebookUserId, String sessionKey) {
+		return createUser(facebookUserId, null, null, null, sessionKey);
+	}
+
+	@Override
+	public User createUser(String facebookUserId, String name,
+			String profileUrl, String accessToken, String sessionKey) {
 		User user = new User();
 		user.setFacebookUserId(facebookUserId);
+		user.setName(name);
+		user.setProfileUrl(profileUrl);
+		user.setAccessToken(accessToken);
 		user.setSessionKey(sessionKey);
 		user.setUpdated(new Date());
 

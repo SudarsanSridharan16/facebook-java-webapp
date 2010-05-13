@@ -27,10 +27,14 @@
         <property name="mappings">
             <props>
                 <prop key="/authorize.fbml">authorizeController</prop>
-                <prop key="/invite.fbml">inviteController</prop>
-                <prop key="/welcome.fbml">welcomeController</prop>
+                <prop key="/feeds.fbml">feedsController</prop>
                 <prop key="/fbml-tags.fbml">fbmlTagsController</prop>
                 <prop key="/fbml-tags/fb-name.fbml">fbmlTagNameController</prop>
+                <prop key="/graph.fbml">graphController</prop>
+                <prop key="/invite.fbml">inviteController</prop>
+                <prop key="/notifications.fbml">notificationsController</prop>
+                <prop key="/oauth.fbml">oauthController</prop>
+                <prop key="/welcome.fbml">welcomeController</prop>
             </props>
         </property>
         <property name="interceptors">
@@ -43,21 +47,31 @@
 
 
     <!-- VIEW RESOLVERS -->
-	<bean id="tilesViewResolver"
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="order" value="0" />
-		<property name="viewClass">
-			<value>org.springframework.web.servlet.view.tiles.TilesView</value>
-		</property>
-	</bean>
-	<bean id="jspViewResolver"
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="order" value="1" />
-		<property name="viewClass"
-			value="org.springframework.web.servlet.view.JstlView" />
-		<property name="prefix" value="/WEB-INF/jsp/" />
-		<property name="suffix" value=".jsp" />
-	</bean>
+    <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+        <property name="mediaTypes">
+            <map>
+                <entry key="atom" value="application/atom+xml"/>
+                <entry key="html" value="text/html"/>
+                <entry key="fbml" value="text/html"/>
+                <entry key="json" value="application/json"/>
+            </map>
+        </property>
+        <property name="viewResolvers">
+            <list>
+				<bean id="tilesViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+					<property name="order" value="0" />
+					<property name="viewClass">
+						<value>org.springframework.web.servlet.view.tiles.TilesView</value>
+					</property>
+				</bean>
+            </list>
+        </property>
+        <property name="defaultViews">
+            <list>
+                <bean class="org.springframework.web.servlet.view.json.MappingJacksonJsonView"/>
+            </list>
+        </property>
+    </bean>
 
 
     <!-- LOCALE RESOLVER -->

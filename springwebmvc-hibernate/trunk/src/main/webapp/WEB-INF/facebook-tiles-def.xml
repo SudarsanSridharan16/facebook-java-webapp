@@ -3,9 +3,9 @@
 "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
 
 <tiles-definitions>
-    <definition name="header" page="/WEB-INF/content/tiles/main-header.jsp" />
+    <definition name="fbml-header" page="/WEB-INF/content/tiles/fbml-header.jsp" />
     <definition name="default" page="/WEB-INF/content/tiles/default-layout.jsp">
-        <put name="header" value="header" />
+        <put name="header" value="fbml-header" />
         <put name="body" value="/WEB-INF/content/500.htm" />
     </definition>
     <definition name="welcome" extends="default">
@@ -14,8 +14,14 @@
     <definition name="invite" extends="default">
         <put name="body" value="/WEB-INF/content/invite.jsp" />
     </definition>
+    <definition name="feeds" extends="default">
+        <put name="body" value="/WEB-INF/content/fbml/feeds.jsp" />
+    </definition>
     <definition name="fbmlTags" extends="default">
         <put name="body" value="/WEB-INF/content/fbmlTags.jsp" />
+    </definition>
+    <definition name="notifications" extends="default">
+        <put name="body" value="/WEB-INF/content/fbml/notifications.jsp" />
     </definition>
     <definition name="fbml-tags-fb-name" extends="default">
         <put name="body" value="/fbml/fb-name.jsp" />
@@ -23,5 +29,8 @@
     <definition name="redirect" extends="default">
         <put name="body" value="/WEB-INF/content/redirect.jsp" />
     </definition>
+    <definition name="oauth" page="/connect/index.jsp" />
+    <definition name="oauth-redirect" page="/WEB-INF/content/fbml/oauth-redirect.jsp" />
+    <definition name="graph" page="/graph/index.jsp" />
     <definition name="blank" page="/WEB-INF/content/tiles/blank.jsp" />
 </tiles-definitions>

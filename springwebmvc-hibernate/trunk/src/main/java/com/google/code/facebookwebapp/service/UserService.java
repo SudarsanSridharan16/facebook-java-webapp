@@ -7,7 +7,7 @@ import com.google.code.facebookwebapp.User;
  * @since 0.2
  */
 public interface UserService {
-
+	
 	/**
 	 * Create a User given the {@code facebookUserId} and a {@code session key}.
 	 * 
@@ -19,7 +19,17 @@ public interface UserService {
 	 * @return User
 	 */
 	User create(String facebookUserId, String sessionKey);
-
+	
+	/**
+	 * @param facebookUserId
+	 * @param name
+	 * @param profileUrl
+	 * @param accessToken
+	 * @param sessionKey
+	 * @return
+	 */
+	User create(String facebookUserId, String name, String profileUrl, String accessToken, String sessionKey);
+	
 	/**
 	 * Retrieve a user by their {@code facebookUserId}
 	 *

@@ -11,14 +11,20 @@
 <c:if test="${callbackUrl eq null}">
 	<spring:message code="${fc.PROPERTY_CALLBACK_URL}" var="callbackUrl" scope="application"/>
 </c:if>
+<c:if test="${connectUrl eq null}">
+	<spring:message code="${fc.PROPERTY_CONNECT_URL}" var="connectUrl" scope="application"/>
+</c:if>
 <c:if test="${canvasUrl eq null}">
 	<spring:message code="${fc.PROPERTY_CANVAS_URL}" var="canvasUrl" scope="application"/>
 </c:if>
 <c:if test="${apiKey eq null}">
 	<spring:message code="${fc.PROPERTY_API_KEY}" var="apiKey" scope="application"/>
 </c:if>
+<c:if test="${apiSecret eq null}">
+	<spring:message code="${fc.PROPERTY_API_SECRET}" var="apiSecret" scope="application"/>
+</c:if>
 <c:if test="${renderMethod eq null}">
 	<spring:message code="${fc.PROPERTY_RENDER_METHOD}" var="renderMethod" scope="application"/>
 </c:if>
-<c:set var="fbmlTagsSelected" value="true" />
+
 

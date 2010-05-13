@@ -79,4 +79,6 @@ ul.featured {
     <fb:tab-item href="${canvasUrl}/" title="Welcome" selected="${welcomeSelected}"/>
     <fb:tab-item href="${canvasUrl}/invite" title="Invite Friends" selected="${inviteSelected}"/>
     <fb:tab-item href="${canvasUrl}/fbml-tags" title="FBML Tags" selected="${fbmlTagsSelected}"/>
+    <fb:tab-item href="${canvasUrl}/notifications" title="Notifications" selected="${notificationsSelected}"/>
+    <fb:tab-item href="${canvasUrl}/feeds" title="Feeds" selected="${feedsSelected}"/>
 </fb:tabs>

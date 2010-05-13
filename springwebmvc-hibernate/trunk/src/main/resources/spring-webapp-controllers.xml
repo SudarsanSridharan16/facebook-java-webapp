@@ -29,11 +29,7 @@
 		<property name="userService" ref="userService" />
 	</bean>
 
-	<bean id="inviteController" class="com.google.code.facebookwebapp.web.controller.InviteController">
-		<property name="methodNameResolver" ref="methodNameResolver"/>
-	</bean>
-
-	<bean id="welcomeController" class="com.google.code.facebookwebapp.web.controller.WelcomeController">
+	<bean id="feedsController" class="com.google.code.facebookwebapp.web.controller.FeedsController">
 		<property name="methodNameResolver" ref="methodNameResolver"/>
 	</bean>
 
@@ -42,6 +38,26 @@
 	</bean>
 
 	<bean id="fbmlTagNameController" class="com.google.code.facebookwebapp.web.controller.FbmlTagNameController">
+		<property name="methodNameResolver" ref="methodNameResolver"/>
+	</bean>
+
+	<bean id="graphController" class="com.google.code.facebookwebapp.web.controller.GraphController">
+		<property name="methodNameResolver" ref="methodNameResolver"/>
+	</bean>
+
+	<bean id="inviteController" class="com.google.code.facebookwebapp.web.controller.InviteController">
+		<property name="methodNameResolver" ref="methodNameResolver"/>
+	</bean>
+
+	<bean id="notificationsController" class="com.google.code.facebookwebapp.web.controller.NotificationsController">
+		<property name="methodNameResolver" ref="methodNameResolver"/>
+	</bean>
+
+	<bean id="oauthController" class="com.google.code.facebookwebapp.web.controller.OauthController">
+		<property name="methodNameResolver" ref="methodNameResolver"/>
+	</bean>
+
+	<bean id="welcomeController" class="com.google.code.facebookwebapp.web.controller.WelcomeController">
 		<property name="methodNameResolver" ref="methodNameResolver"/>
 	</bean>
 

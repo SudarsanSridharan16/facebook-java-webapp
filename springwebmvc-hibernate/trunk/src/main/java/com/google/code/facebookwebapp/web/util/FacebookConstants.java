@@ -30,11 +30,28 @@ public class FacebookConstants {
 	 * The view that is rendered for the fbml tags page
 	 */
 	public static final String VIEW_FBMLTAGS = "fbmlTags";
+	
+	/**
+	 * The view that is rendered for the notifications page
+	 */
+	public static final String VIEW_NOTIFICATIONS = "notifications";
+	
+	/**
+	 * The view that is rendered for the feeds page
+	 */
+	public static final String VIEW_FEEDS = "feeds";
+	
+	/**
+	 * The view that is rendered for the oauth redirect page
+	 */
+	public static final String VIEW_OAUTH_REDIRECT = "oauth-redirect";
 
 	/**
 	 * The view that is rendered for the fbml-name tag page
 	 */
 	public static final String VIEW_FBMLTAGS_NAME = "fbml-tags-fb-name";
+
+	public static final String VIEW_GRAPH = "graph";
 
 	/**
 	 * PROPERTIES
@@ -44,6 +61,11 @@ public class FacebookConstants {
 	 * Property for the callback url
 	 */
 	public static final String PROPERTY_CALLBACK_URL = "facebook.callback";
+	
+	/**
+	 * Property for the connect url
+	 */
+	public static final String PROPERTY_CONNECT_URL = "facebook.connect.url";
 
 	/**
 	 * Property for the canvas url
@@ -106,9 +128,26 @@ public class FacebookConstants {
 	 * is selected or not
 	 */
 	public static final String MODEL_FBMLTAGS_SELECTED = "fbmlTagsSelected";
+	
+	/**
+	 * Model Object for knowing whether the notifications page in the canvas
+	 * is selected or not.
+	 */
+	public static final String MODEL_NOTIFICATIONS_SELECTED = "notificationsSelected";
+	
+	/**
+	 * Model Object for knowing whether the feeds page in the canvas
+	 * is selected or not.
+	 */
+	public static final String MODEL_FEEDS_SELECTED = "feedsSelected";
 
 	/**
 	 * Model Object for the content displayed in the invite page
 	 */
 	public static final String MODEL_INVITE_CONTENT = "inviteContent";
+	
+	/**
+	 * SESSION CONSTANTS
+	 */
+	public static final String SESSION_FB_USER = "fb_user";
 }
