@@ -1,7 +1,7 @@
 === Release 0.4 ===
 
   * OAuth v2 authentication
-  * Facebook Connect sample site
+  * Social Plugins sample site
   * Samples with Facebook Open Graph
 
 === Release 0.5 ===
