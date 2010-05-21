@@ -1,9 +1,3 @@
-=== Release 0.4 ===
+=== Future releases ===
 
-  * OAuth v2 authentication
-  * Social Plugins sample site
-  * Samples with Facebook Open Graph
-
-=== Release 0.5 ===
-  * Support Struts 2 as the Web MVC framework in a separate folder
-  * Integration with Facebook API REST Client for retrieval of friend data
+  * Support for other Java Web Frameworks, like Struts 2, etc.
