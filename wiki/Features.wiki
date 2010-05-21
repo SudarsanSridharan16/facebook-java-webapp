@@ -1,6 +1,7 @@
 #labels Features
 These are the features of the project.
 
+  * Live samples of all the FBML tags. Check them out <a href="http://apps.facebook.com/java-webapp/fbml-tags">here</a>.
   * Facebook Java API Integration
     * Sending a notification on a user's action
     * Publish a feed story using a [http://wiki.developers.facebook.com/index.php/FeedStory_form FeedStory] form
