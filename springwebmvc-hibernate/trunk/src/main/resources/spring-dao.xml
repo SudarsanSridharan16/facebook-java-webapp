@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-    - Application context definition for Controller objects
--->
-
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:oxm="http://www.springframework.org/schema/oxm"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+				http://www.springframework.org/schema/oxm http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd">
 
 	<!-- data source and session factory -->
     <bean id="facebookDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
@@ -30,9 +29,5 @@
     <bean id="facebookTransactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
 		<property name="sessionFactory" ref="facebookSessionFactory"/>
 	</bean>
-
-	<bean id="userDao" class="com.google.code.facebookwebapp.model.dao.hibernate.HibernateUserDao">
-        <property name="hibernateTemplate" ref="facebookHibernateTemplate" />
-    </bean>
 
 </beans>

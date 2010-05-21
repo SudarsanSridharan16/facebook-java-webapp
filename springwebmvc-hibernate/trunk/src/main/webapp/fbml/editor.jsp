@@ -1,6 +1,6 @@
 <fb:fbml version="1.1">
 <%@ include file="/WEB-INF/content/includes/include.jsp"%>
-<%@ include file="/WEB-INF/content/tiles/main-header.jsp"%>
+<%@ include file="/WEB-INF/content/includes/fbml-header.jsp"%>
 <fb:header><a href="http://developers.facebook.com/docs/reference/fbml/editor">fb:editor</a></fb:header>
 
 <p>Creates a form with two columns, just like the form on the edit-profile page.</p>

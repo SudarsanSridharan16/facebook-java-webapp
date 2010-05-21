@@ -1,6 +1,6 @@
 <fb:fbml version="1.1">
 <%@ include file="/WEB-INF/content/includes/include.jsp"%>
-<%@ include file="/WEB-INF/content/tiles/main-header.jsp"%>
+<%@ include file="/WEB-INF/content/includes/fbml-header.jsp"%>
 <fb:header><a href="http://developers.facebook.com/docs/reference/fbml/fbmlversion">fb:fbmlversion</a></fb:header>
 
 <p>Prints the version of FBML currently in scope.</p>

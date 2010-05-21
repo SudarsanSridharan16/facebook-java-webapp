@@ -11,8 +11,7 @@
 		Answer the poll and a notification will be sent to you.
 	</div>
 	<div>
-		<fb:editor action="notifications" labelwidth="100">
-			<input type="hidden" name="methodName" value="sendNotificationToOneUser">
+		<fb:editor action="notifications/send-notification" labelwidth="100">
 			<fb:editor-custom label="Does developing for facebook is easier with facebook-java-webapp?">
 				<select name="state">
 					<option value="Yes" selected>Yes</option>

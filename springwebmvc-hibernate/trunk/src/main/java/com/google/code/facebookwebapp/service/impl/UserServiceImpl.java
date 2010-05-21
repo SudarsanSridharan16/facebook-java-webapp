@@ -2,6 +2,9 @@ package com.google.code.facebookwebapp.service.impl;
 
 import java.util.Date;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.google.code.facebookwebapp.User;
 import com.google.code.facebookwebapp.model.dao.UserDao;
 import com.google.code.facebookwebapp.service.UserService;
@@ -10,11 +13,13 @@ import com.google.code.facebookwebapp.service.UserService;
  * @author Cesar Arevalo
  * @since 0.2
  */
+@Service("userService")
 public class UserServiceImpl implements UserService {
 
 	/**
 	 * DAO for database mapping.
 	 */
+	@Autowired
 	private UserDao userDao;
 
 	/**
@@ -62,13 +67,6 @@ public class UserServiceImpl implements UserService {
 		user.setSessionKey(sessionKey);
 
 		return user;
-	}
-
-	/**
-	 * @param userDao
-	 */
-	public void setUserDao(UserDao userDao) {
-		this.userDao = userDao;
 	}
 
 }

@@ -1,6 +1,6 @@
 <fb:fbml version="1.1">
 <%@ include file="/WEB-INF/content/includes/include.jsp"%>
-<%@ include file="/WEB-INF/content/tiles/main-header.jsp"%>
+<%@ include file="/WEB-INF/content/includes/fbml-header.jsp"%>
 <fb:header><a href="http://developers.facebook.com/docs/reference/fbml/js-string">fb:js-string</a></fb:header>
 
 <p>This tag renders a block of FBML into an FBML block variable instead of rendering it on the page.</p>

@@ -1,36 +1,82 @@
 <!DOCTYPE tiles-definitions PUBLIC
-"-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
-"http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 
 <tiles-definitions>
-    <definition name="fbml-header" page="/WEB-INF/content/tiles/fbml-header.jsp" />
-    <definition name="default" page="/WEB-INF/content/tiles/default-layout.jsp">
-        <put name="header" value="fbml-header" />
-        <put name="body" value="/WEB-INF/content/500.htm" />
+	<!-- Includes -->
+    <definition name="blank" template="/WEB-INF/content/includes/blank.jsp"/>
+    <definition name="fbml-header" template="/WEB-INF/content/includes/fbml-header.jsp"/>
+    <definition name="iframe-header" template="/WEB-INF/content/includes/iframe-header.jsp"/>
+    <definition name="web-head" template="/WEB-INF/content/includes/web-head.jsp"/>
+	
+    <!-- Layouts -->
+    <definition name="web-layout" template="/WEB-INF/content/layouts/web-layout.jsp">
+        <put-attribute name="body" value="/WEB-INF/content/includes/blank.jsp"/>
+        <put-attribute name="head" value="web-head"/>
+        <put-attribute name="left-nav" value="/WEB-INF/content/includes/blank.jsp"/>
     </definition>
-    <definition name="welcome" extends="default">
-        <put name="body" value="/WEB-INF/content/welcome.jsp" />
+    <definition name="social-plugins-layout" extends="web-layout">
+        <put-attribute name="left-nav" value="/WEB-INF/content/web/social-plugins-left-nav.jsp"/>
     </definition>
-    <definition name="invite" extends="default">
-        <put name="body" value="/WEB-INF/content/invite.jsp" />
+    <definition name="graph-api-layout" extends="web-layout">
+        <put-attribute name="left-nav" value="/WEB-INF/content/web/graph-api-left-nav.jsp"/>
     </definition>
-    <definition name="feeds" extends="default">
-        <put name="body" value="/WEB-INF/content/fbml/feeds.jsp" />
+    <definition name="js-sdk-layout" extends="web-layout">
+        <put-attribute name="left-nav" value="/WEB-INF/content/web/js-sdk-left-nav.jsp"/>
     </definition>
-    <definition name="fbmlTags" extends="default">
-        <put name="body" value="/WEB-INF/content/fbmlTags.jsp" />
+    
+    <!-- Web - The definitions for the website -->
+    <definition name="oauth" template="/oauth.jsp"/>
+    <definition name="oauth-redirect" template="/WEB-INF/content/fbml/oauth-redirect.jsp"/>
+    <definition name="redirect" template="/WEB-INF/content/redirect.jsp"/>
+    <definition name="web.activity-feed" extends="social-plugins-layout">
+        <put-attribute name="body" value="/WEB-INF/content/web/activity-feed.jsp"/>
     </definition>
-    <definition name="notifications" extends="default">
-        <put name="body" value="/WEB-INF/content/fbml/notifications.jsp" />
+    <definition name="web.comments" extends="social-plugins-layout">
+        <put-attribute name="body" value="/WEB-INF/content/web/comments.jsp"/>
     </definition>
-    <definition name="fbml-tags-fb-name" extends="default">
-        <put name="body" value="/fbml/fb-name.jsp" />
+    <definition name="web.facepile" extends="social-plugins-layout">
+        <put-attribute name="body" value="/WEB-INF/content/web/facepile.jsp"/>
     </definition>
-    <definition name="redirect" extends="default">
-        <put name="body" value="/WEB-INF/content/redirect.jsp" />
+    <definition name="web.graph-api" extends="graph-api-layout">
+        <put-attribute name="body" value="/WEB-INF/content/web/graph-api.jsp"/>
     </definition>
-    <definition name="oauth" page="/connect/index.jsp" />
-    <definition name="oauth-redirect" page="/WEB-INF/content/fbml/oauth-redirect.jsp" />
-    <definition name="graph" page="/graph/index.jsp" />
-    <definition name="blank" page="/WEB-INF/content/tiles/blank.jsp" />
+    <definition name="web.graph-api.me" extends="graph-api-layout">
+        <put-attribute name="body" value="/WEB-INF/content/web/graph-api-me.jsp"/>
+    </definition>
+    <definition name="web.js-sdk" extends="js-sdk-layout">
+        <put-attribute name="body" value="/WEB-INF/content/web/js-sdk.jsp"/>
+    </definition>
+    <definition name="web.js-sdk-api" extends="js-sdk-layout">
+        <put-attribute name="body" value="/WEB-INF/content/web/js-sdk-api.jsp"/>
+    </definition>
+    <definition name="web.live-stream" extends="social-plugins-layout">
+        <put-attribute name="body" value="/WEB-INF/content/web/live-stream.jsp"/>
+    </definition>
+    <definition name="web.welcome" extends="social-plugins-layout">
+        <put-attribute name="body" value="/WEB-INF/content/web/welcome.jsp"/>
+    </definition>
+	
+	<!-- CANVAS - The definitions for the canvas pages - Using Render Method as Wildcard, i.e. 'fbml' or 'iframe' -->
+	<definition name="canvas.*.fbml" template="/WEB-INF/content/layouts/{1}-layout.jsp">
+        <put-attribute name="header" value="{1}-header"/>
+        <put-attribute name="body" value="/WEB-INF/content/{1}/fbml.jsp"/>
+    </definition>
+    <definition name="canvas.*.feeds" template="/WEB-INF/content/layouts/{1}-layout.jsp">
+        <put-attribute name="header" value="{1}-header"/>
+        <put-attribute name="body" value="/WEB-INF/content/{1}/feeds.jsp"/>
+    </definition>
+    <definition name="canvas.*.invite" template="/WEB-INF/content/layouts/{1}-layout.jsp">
+        <put-attribute name="header" value="{1}-header"/>
+        <put-attribute name="body" value="/WEB-INF/content/{1}/invite.jsp"/>
+    </definition>
+    <definition name="canvas.*.notifications" template="/WEB-INF/content/layouts/{1}-layout.jsp">
+        <put-attribute name="header" value="{1}-header"/>
+        <put-attribute name="body" value="/WEB-INF/content/{1}/notifications.jsp"/>
+    </definition>
+	<definition name="canvas.*.welcome" template="/WEB-INF/content/layouts/{1}-layout.jsp">
+        <put-attribute name="header" value="{1}-header"/>
+        <put-attribute name="body" value="/WEB-INF/content/{1}/welcome.jsp"/>
+    </definition>
+    
 </tiles-definitions>

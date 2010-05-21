@@ -3,7 +3,11 @@ package com.google.code.facebookwebapp.model.dao.hibernate;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.orm.hibernate3.HibernateTemplate;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+import org.springframework.stereotype.Service;
 
 import com.google.code.facebookwebapp.User;
 import com.google.code.facebookwebapp.model.dao.UserDao;
@@ -12,6 +16,7 @@ import com.google.code.facebookwebapp.model.dao.UserDao;
  * @author Cesar Arevalo
  * @since 0.2
  */
+@Service("userDao")
 public class HibernateUserDao extends HibernateDaoSupport implements UserDao {
 
 	/* (non-Javadoc)
@@ -64,4 +69,9 @@ public class HibernateUserDao extends HibernateDaoSupport implements UserDao {
 		}
 	}
 
+	@Autowired
+	@Qualifier("facebookHibernateTemplate")
+	public void setHTemplate(HibernateTemplate hibernateTemplate) {
+		super.setHibernateTemplate(hibernateTemplate);
+	}
 }

@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page session="true"%>
 <%@ page isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -5,9 +6,9 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib uri="http://struts.apache.org/tags-tiles" prefix="tiles" %>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <%@ taglib uri="http://jakarta.apache.org/taglibs/unstandard-1.0" prefix="un" %>
-<un:useConstants var="fc" className="com.google.code.facebookwebapp.web.util.FacebookConstants"/>
+<un:useConstants var="fc" className="com.google.code.facebookwebapp.util.FacebookConstants"/>
 <c:if test="${callbackUrl eq null}">
 	<spring:message code="${fc.PROPERTY_CALLBACK_URL}" var="callbackUrl" scope="application"/>
 </c:if>
@@ -26,5 +27,6 @@
 <c:if test="${renderMethod eq null}">
 	<spring:message code="${fc.PROPERTY_RENDER_METHOD}" var="renderMethod" scope="application"/>
 </c:if>
-
-
+<c:if test="${serverUrl eq null}">
+	<spring:message code="${fc.PROPERTY_SERVER_URL}" var="serverUrl" scope="application"/>
+</c:if>
