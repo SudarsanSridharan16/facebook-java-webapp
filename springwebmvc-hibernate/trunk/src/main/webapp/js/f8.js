@@ -22,9 +22,9 @@ fjw.fb_init = function(apiKey) {
 		    // logged in and connected user, someone you know
 			console.log('FB.getLoginStatus - logged in and connected user, someone you know');
 			FB.api('/me', function(response) {
-			  document.getElementById('fb_user_link').href = response.link;
-			  document.getElementById('fb_user_link').innerHTML = response.name;
-			  document.getElementById('fb_profile_pic').src = "https://graph.facebook.com/" + response.id + "/picture";
+			  $("#fb_user_link").attr("href", response.link);
+			  $("#fb_user_link").html(response.name);
+			  $("#fb_profile_pic").attr("src", "https://graph.facebook.com/" + response.id + "/picture");
 			});
 		  } else {
 		    // no user session available, someone you dont know
