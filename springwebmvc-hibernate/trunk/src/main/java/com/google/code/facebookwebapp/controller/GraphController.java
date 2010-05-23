@@ -32,7 +32,7 @@ public class GraphController {
 	public String handler(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception {
 
 		String facebookUserId = (String) request.getSession().getAttribute(
-				FacebookConstants.SESSION_FB_USER);
+				FacebookConstants.SESSION_FB_USER_ID);
 		if (facebookUserId == null) {
 			request.getSession().setAttribute("redirect_to",
 					request.getRequestURI());

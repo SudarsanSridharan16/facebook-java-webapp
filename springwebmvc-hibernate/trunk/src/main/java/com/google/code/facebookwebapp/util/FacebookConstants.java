@@ -154,5 +154,6 @@ public class FacebookConstants {
 	/**
 	 * SESSION CONSTANTS
 	 */
+	public static final String SESSION_FB_USER_ID = "fb_user_id";
 	public static final String SESSION_FB_USER = "fb_user";
 }
